@@ -12,6 +12,12 @@ menu "app config"
 
     source "Src/App/RobotModules/Gimbal/Kconfig"
 
+    config APP_USE_MOUNTER
+    bool "mounter"
+    default n
+
+    source "Src/App/RobotModules/Mounter/Kconfig"
+
     config APP_USE_TEST
     bool "test modules"
     default n
